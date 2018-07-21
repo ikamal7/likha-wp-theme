@@ -1,0 +1,251 @@
+/*!
+Theme Name: Likha
+Theme URI: http://ikamal.me/
+Author: Kamal Hosen
+Author URI: http://ikamal.me
+Description: Likha is a blog theme developed by Codelabs
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: likha
+Tags: two-columns, three-columns, four-columns, blog, sidebar, grid layout, news
+*/
+/*Reset CSS*/
+img{
+    max-width: 100%;
+}
+/*------- Pagination Widgets ----------*/
+.pagination{
+    margin: 0 0 30px;
+}
+.page-numbers li{
+    display: inline-block;
+}
+.page-numbers>li>a {
+    margin: 0 2px;
+    /*box-shadow: 0 1px 3px rgba(0,0,0,.1);*/
+    border-color: #eaeaea;
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-weight: 600;
+    border: 0
+}
+.pagination > .page-numbers > li > a,
+.pagination > .page-numbers > li > span {
+    box-shadow: none;
+    border: 0;
+}
+
+.page-numbers> li > span.current, .page-numbers> li > a:hover{
+    background-color: #222;
+    border-color: #222;
+    color: #fff;
+    padding: 5px 8px;
+    display: inline-block;
+}
+.page-numbers> li > a {
+    padding:  5px 8px;
+    display:  inline-block;
+}
+
+.page-numbers > li:first-child > a,
+.page-numbers > li:first-child > span,
+.page-numbers > li:last-child > a,
+.page-numbers > li:last-child > span {
+    border-radius: 0;
+}
+a.navbar-brand h2 {
+    margin:  0;
+    padding:  0;
+    color:  #fff;
+    margin-top: 5px;
+}
+
+.likha_cat_post .media-body, .likha_cat_post .media-left, .likha_cat_post .media-right {
+    display:  inherit;
+    width: 100%;
+}
+
+.likha_cat_post .meida-md .media-left a img {
+    width: 100%;
+}
+
+.likha_cat_post .meida-md .media-left {
+    padding: 0;
+    margin-bottom: 20px;
+}
+.col-md-6.no-gutter {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.media-body {
+    padding-right: 10px;
+}
+
+.col-md-6.no-gutter .media.meida-md {
+    min-height: 300px;
+}
+
+/* Dropdown Menu ------*/
+/*
+nav.navbar.bootsnav li ul.sub-menu {
+    width: 180px;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+}
+*/
+
+nav.navbar.bootsnav li ul {
+    position:  absolute;
+    left:  0;
+    top: 75px;
+    width: 250px;
+    z-index:  9;
+    background-color: #fff;
+    visibility:  hidden;
+    opacity: 0;
+    transition: .3s;
+    border: 1px solid #eaeaea;
+}
+
+nav.navbar.bootsnav li ul li {
+    display:  block;
+}
+
+nav.navbar.bootsnav li li a, nav.navbar.bootsnav li:first-child li a, nav.navbar.bootsnav li li:first-child a {
+    padding: 15px;
+    color: #222;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+nav.navbar.bootsnav li li:after {
+    bottom:  0;
+    height:  1px;
+    width:  100%;
+    margin-top:  0;
+    opacity:  .1;
+    top: 0;
+}
+
+
+
+nav.navbar.bootsnav li li:hover > a {
+    color: #d17c78;
+}
+
+nav.navbar.bootsnav li:hover > a {
+    color: ;
+}
+
+nav.navbar.bootsnav li:hover ul {
+    visibility:  visible;
+    opacity:  1;
+    top: 75px;
+}
+nav.navbar.bootsnav li ul ul {
+    left:  250px;
+}
+
+nav.navbar.bootsnav li:hover > ul li:hover > ul {
+    visibility:  visible;
+    opacity: 1;
+    top: 20px;
+}
+
+nav.navbar.bootsnav li:hover ul li ul {
+    opacity: 0;
+    visibility:  hidden;
+}
+nav.navbar.bootsnav ul ul ul ul ul {
+    left:  auto;
+    right: 250px;
+}
+
+nav.navbar.bootsnav ul ul ul ul ul ul ul ul {
+    right:  auto;
+    left: 250px;
+    top: 0;
+}
+nav.navbar.navbar-inverse ul.nav > li > a > i.fa {
+    font-size:  80%;
+    margin-left: 5px;
+}
+h2.mas-title.small-font {
+    font-size: 22px;
+}
+span.author a {
+    color: #b95a55;
+}
+.author-post {
+    max-height: 240px;
+}
+li form.likha-search {
+    margin-top: 25px
+}
+
+@media (max-width: 768px){
+    li form.likha-search {
+
+    }
+}
+
+.navbar-form-search {
+    position: relative;
+}
+.navbar-form-search .form-control {
+    width: 250px;
+    border: none;
+    margin: 0;
+}
+.navbar-form-search .btn {
+    border: 0;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+}
+.navbar-form-search .btn:active, .navbar-form-search .btn:hover, .navbar-form-search .btn:focus {
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+}
+.navbar-form-search .search-form-container {
+    text-align: right;
+    position: absolute;
+    width: 300px;
+    overflow: hidden;
+    background: #fff;
+    right: 60px;
+    top: 0;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+}
+.navbar-form-search .search-form-container.hdn {
+    width: 0;
+}
+.navbar-form-search .search-form-container .search-input-group {
+    width: 300px;
+}
+.btn.btn-dark, .btn.btn-dark:hover, .btn.btn-dark:focus{
+    color: #000;
+}
+.highlight__text {
+    background-color: #d17c78;
+    color: #ffffff;
+}
+.author-bio {
+    min-height: 200px;
+}
+
+.comment-list .media-left img {
+    max-width:  inherit;
+}
+.children .comment{
+    margin-left: 30px;
+}
